@@ -17,6 +17,7 @@ Each folder contains:
 
 | Challenge | Title               | Preview        | Code Folder |
 |-----------|---------------------|----------------|-------------|
+| 001       | Login Page 🔐        | *(Coming Soon)*| [001_Login_Page](001_Login_Page) |
 | ...       | ...                 | ...            | ...         |
 
 > ✅ Live previews will be linked once deployed.
