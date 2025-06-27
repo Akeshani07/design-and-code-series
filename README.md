@@ -18,6 +18,7 @@ Each folder contains:
 | Challenge | Title               | Preview        | Code Folder |
 |-----------|---------------------|----------------|-------------|
 | 001       | Login Page 🔐        | *(Coming Soon)*| [001_Login_Page](001_Login_Page) |
+| 002       | Credit Card Checkout 💳        | *(Coming Soon)*| [002_Credit_Card_Checkout](002_Credit_Card_Checkout) |
 | ...       | ...                 | ...            | ...         |
 
 > ✅ Live previews will be linked once deployed.
