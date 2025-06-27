@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color01: #628FA4;
+    --color02: #25333A;
+    --color03: #4E5A60;
+    --color04: #8E9396;
+    --color05: #D2D2D2;
+    --color06: #FFFFFF;
+    --box-shadow: 0 0 20px rgb(14 55 54 /15%);
+}
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.container form{
+    background: var(--color06);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    padding: 50px;
+    width: 800px;
+    margin-top: 150px;
+}
+.container form .input_box{
+    margin-top: 25px;
+}
+.container form .input_box span{
+    display: block;
+    color: var(--color02);
+
+}
+
+.container form .input_box input,
+.container form .input_box select{
+    width: 100%;
+    padding: 4px 20px;
+    color: none;
+    border: 1px solid var(--color04);
+    border-radius: 50px;
+    font-size: 18px;
+}
+.container .detail_box{
+    display: flex;
+    gap: 45px;
+}
+.container .submit{
+    width: 100%;
+    margin-top: 25px;
+    padding: 4px;
+    font-size: 18px;
+    color: var(--color06);
+    background-color: var(--color02);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.container .submit:hover{
+    background: var(--color03);
+    color: var(--color05);
+}
+.card_container{
+    width: 640px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    perspective: 1000px;
+    margin-bottom: -200px;
+}
+
+
+.card_front,
+.card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50px;
+  padding: 50px;
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(25px);
+  top: 0;
+  left: 0;
+}
+.card_front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+}
+
+.card_front .card_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.card_front .card_img .img01{
+    height: 50px;
+    width: auto;
+}
+.card_front .card_img .img02{
+    height: 100px;
+    width: auto;
+}
+
+.card_number_box{
+    margin-top: 50px;
+    font-size: 24px;
+    color: var(--color06);
+}
+
+.name_box{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--color06);
+}
+.expire_details{
+    display: block;
+    color: var(--color02);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.card_back{
+    position: relative;
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    padding: 50px;
+    width: 640px;
+    height: 400px;
+    box-shadow: var(--box-shadow);
+
+}
+.card_back .black_stripe{
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: var(--color02);
+}
+.card_back .cvv_box {
+    margin-top: 50px;
+    margin-left: auto;       
+    margin-right: 0;         
+    color: var(--color02);
+    background-color: var(--color06);
+    padding: 2px;
+    border-radius: 50px;
+    width: 12.5%; 
+    height: 30px;             
+    font-size: 18px;
+    text-align: right;
+    box-shadow: var(--box-shadow);
+}
+@media (max-width: 700px) {
+  .card_container,
+  .card_front,
+  .card_back {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .container form {
+    width: 95%;
+    padding: 30px;
+  }
+}
