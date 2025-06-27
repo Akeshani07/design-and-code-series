@@ -5,7 +5,7 @@ Design and code a modern, user-friendly login page interface.
 
 ## 🛠️ What I Did
 This challenge was completed using:
-- **HTML** (`dailyui001.html`)
+- **HTML** (`DailyUI001.html`)
 - **CSS** (`assets/style.css`)
 - **Icons** sourced directly from [Boxicons](https://boxicons.com/) via CDN
 
@@ -30,10 +30,10 @@ Live demo link will be added soon.
 
 - **Daily-UI-Challenges/**
   - `001-Login-Page/`
-    - `dailyui001.html`
+    - `DailyUI001.html`
     - `assets/`
         - `img/`
-        - `style.css`
+        - `css/`
     - `Screenshots/`
     - `README.md`
 ---
