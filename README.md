@@ -19,6 +19,7 @@ Each folder contains:
 |-----------|---------------------|----------------|-------------|
 | 001       | Login Page 🔐        | *(Coming Soon)*| [001_Login_Page](001_Login_Page) |
 | 002       | Credit Card Checkout 💳        | *(Coming Soon)*| [002_Credit_Card_Checkout](002_Credit_Card_Checkout) |
+| 003       | Landing Page 🧑‍🍳    | *(Coming Soon)*| [003_Landing_Page](003_Landing_Page)   |
 | ...       | ...                 | ...            | ...         |
 
 > ✅ Live previews will be linked once deployed.
