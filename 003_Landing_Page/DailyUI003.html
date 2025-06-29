@@ -6,24 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
     <div class="container">
         <nav>
-            <ul class="nav__link nav__left">
-                <li><a href="#" class="Logo">Pasta</a></li>
-                <li><a href="#">Home</a></li>
+            <div class="nav_left">
+                <span>Pasta</span>
+            </div>
+        
+            <ul class="nav_right">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Contact Us</a></li>
-            </ul>
-            <ul class="nav__link nav__right">
                 <li><a href="#" class="cart"><i class='bx bx-cart'></i></a></li>
                 <li><a href="#" class="user"><i class="bx bx-user"></i></a></li>
             </ul>
         </nav>
+        <span class="letter_s">S</span>
+        <h1 class="text_left">pa</h4>
+        <h1 class="text_right">ta</h1>
     </div>
+
+       <script>
+        // Correct way to use ScrollReveal
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '50px',
+            duration: 1000,
+        });
+
+        sr.reveal('.container .letter_s', {
+            delay: 1000,
+        });
+
+        sr.reveal('.text_left', {
+            origin: 'left',
+            delay: 1200,
+        });
+
+        sr.reveal('.text_right', {
+            origin: 'right',
+            delay: 1400,
+        });
+    </script>
 </body>
 
 </html>

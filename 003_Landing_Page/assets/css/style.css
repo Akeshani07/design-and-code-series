@@ -72,3 +72,52 @@ nav{
     justify-content: space-between;
     gap: 20px;
 }
+.nav_left{
+    font-family: 'Sarina', cursive;
+    font-size: 2rem;
+    color: var(--color01);
+}
+.nav_right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav_right li a{
+    color: var(--color04);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 4px;
+}
+.nav_right li a:hover{
+    color: var(--color03);
+    font-size: 20px;
+    transition: 0.3s;
+}
+.letter_s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400px;
+    font-weight: 900;
+    color: var(--color01);
+    z-index: 0;
+    opacity: 0.75;
+    font-family: 'Sarina', cursive;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 200px;
+    font-weight: 900;
+    font-family: 'Sarina', cursive;
+} 
+.text_left{
+    color: var(--color02);
+    transform: translate(calc(-50% - 400px), -50%);
+}
+.text_right{
+    color: var(--color04);
+    transform: translate(calc(-50% + 400px), -50%);
+}
