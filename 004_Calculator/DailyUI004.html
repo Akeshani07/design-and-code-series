@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator.dark">
+           <div class="toggler_active">
+            <i class="toggler_icon"></i>
+           </div>
+           <div class="display_screen">
+            <div id="display"> </div>
+           </div>
+           <div class="buttons">
+            <table>
+                <tr>
+                    <td><button class="btn_operation" id="clear">C</button></td>
+                    <td><button class="btn_operation" id="/">&divide;</button></td>
+                    <td><button class="btn_operation" id="*">&times;</button></td>
+                    <td><button class="btn_operation" id="backspace">del</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn_number" id="7">7</button></td>
+                    <td><button class="btn_number" id="8">8</button></td>
+                    <td><button class="btn_number" id="9">9</button></td>
+                    <td><button class="btn_operation" id="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn_number" id="6">6</button></td>
+                    <td><button class="btn_number" id="5">5</button></td>
+                    <td><button class="btn_number" id="4">4</button></td>
+                    <td><button class="btn_operation" id="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn_number" id="3">3</button></td>
+                    <td><button class="btn_number" id="2">2</button></td>
+                    <td><button class="btn_number" id="1">1</button></td>
+                    <td><button class="btn_operation" id="equals">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn_operation" id="(">(</button></td>
+                    <td><button class="btn_operation" id="0">0</button></td>
+                    <td><button class="btn_operation" id=")">)</button></td>
+                </tr>
+
+            </table>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        const display = document.querySelector('#display');
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach(item) => {
+            item.onclick = () => {
+                if (item.id) == "clear") {
+                    display.innerText = '';
+                } else if (item.id == "backspace") {
+                    display.innerText = display.innerText.slice(0, -1);
+                } else if (item.id == "equals") {
+                    try {
+                        display.innerText = eval(display.innerText);
+                    } catch {
+                        display.innerText = 'Error';
+                    }
+                } else {
+                    display.innerText += item.id;
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
